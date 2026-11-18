@@ -1,0 +1,88 @@
+/* Lumina Clarity Design System Tokens (DESIGN.MD) */
+
+:root {
+  /* Surface Hierarchy */
+  --color-surface: #f8fafc;
+  --color-surface-dim: #f1f5f9;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f8fafc;
+  --color-surface-container: #f1f5f9;
+  --color-surface-container-high: #e2e8f0;
+  --color-surface-container-highest: #cbd5e1;
+  --color-background: #f8fafc;
+
+  /* Typography & Ink */
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #475569;
+  --color-on-surface-muted: #94a3b8;
+  --color-on-background: #0f172a;
+  --color-inverse-surface: #0f172a;
+  --color-inverse-on-surface: #f8fafc;
+
+  /* Borders & Focus */
+  --color-outline: #e2e8f0;
+  --color-outline-variant: #cbd5e1;
+  --color-outline-focus: #2563eb;
+  --color-surface-tint: #2563eb;
+
+  /* Primary Cobalt */
+  --color-primary: #2563eb;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #eff6ff;
+  --color-on-primary-container: #1d4ed8;
+  --color-primary-hover: #1d4ed8;
+
+  /* Secondary Slate */
+  --color-secondary: #0f172a;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #f1f5f9;
+  --color-on-secondary-container: #334155;
+
+  /* Status & Categorical Accents */
+  --color-accent-success: #10b981;
+  --color-accent-success-container: #ecfdf5;
+  --color-on-accent-success: #047857;
+
+  --color-accent-warning: #f59e0b;
+  --color-accent-warning-container: #fffbeb;
+  --color-on-accent-warning: #b45309;
+
+  --color-accent-error: #ef4444;
+  --color-accent-error-container: #fef2f2;
+  --color-on-accent-error: #b91c1c;
+
+  --color-tag-yellow: #f59e0b;
+  --color-tag-red: #ef4444;
+  --color-tag-blue: #3b82f6;
+  --color-tag-green: #10b981;
+  --color-tag-purple: #8b5cf6;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Elevation & Shadows */
+  --shadow-level-1: 0px 1px 3px rgba(15, 23, 42, 0.04), 0px 1px 2px rgba(15, 23, 42, 0.02);
+  --shadow-level-2: 0px 12px 24px -4px rgba(15, 23, 42, 0.08), 0px 4px 6px -2px rgba(15, 23, 42, 0.03);
+  --shadow-focus-halo: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+@keyframes lumina-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes lumina-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

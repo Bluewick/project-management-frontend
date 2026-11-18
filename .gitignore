@@ -11,6 +11,9 @@ node_modules
 docs
 dist
 dist-ssr
+.agents
+.agents/*
+DESIGN.md
 *.local
 
 # Editor directories and files

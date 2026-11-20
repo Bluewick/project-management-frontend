@@ -182,7 +182,7 @@ export function RegisterPage() {
           type="email"
           name="email"
           autoComplete="email"
-          placeholder="alex.dev@traceboard.io"
+          placeholder="name@email.com"
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -277,6 +277,16 @@ export function RegisterPage() {
             onKeyUp={handleCapsCheck}
             error={fieldErrors.confirmPassword || (confirmMismatch ? 'Passwords do not match.' : '')}
             leftIcon={<Lock className="w-4 h-4" />}
+            rightElement={
+              <button
+                type="button"
+                onClick={() => setShowPassword((prev) => !prev)}
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+                className="text-on-surface-muted hover:text-on-surface p-1 rounded transition-colors cursor-pointer"
+              >
+                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </button>
+            }
             required
           />
 

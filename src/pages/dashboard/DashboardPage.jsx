@@ -211,7 +211,7 @@ export function DashboardPage() {
             apiHealthy === true ? 'Healthy' : apiHealthy === false ? 'Offline' : 'Checking'
           }
           icon={<Layers className="w-4 h-4" />}
-          trend={apiHealthy === true ? 'DB Connected' : undefined}
+          trend={apiHealthy === true ? '' : undefined}
           trendDirection={apiHealthy === false ? 'down' : 'up'}
           subtitle="Traceboard API"
         />

@@ -102,7 +102,7 @@ export function LoginPage() {
           type="email"
           name="email"
           autoComplete="email"
-          placeholder="alex.dev@traceboard.io"
+          placeholder="name@email.com"
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
